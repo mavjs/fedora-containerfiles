@@ -1,10 +1,12 @@
 Fedora based Application Dockerfiles
 ====================================
-* Install [Docker](https://www.docker.io/).
+Install [Docker](https://www.docker.io/).
 
-* ```sudo docker pull mavjs/chrome``` or any other app
+```sudo yum install docker-io```
 
-* ```
+```sudo docker pull mavjs/chrome``` or any other app
+
+```
     sudo docker run -it \
     --net host \
     --cpuset 0 \
@@ -19,6 +21,6 @@ Fedora based Application Dockerfiles
     -v ~/.pulse:/home/$dockerUsername/.pulse \
     --name chrome \
     mavjs/chrome
-    ```
+```
 
-* PROFIT!!
+**PROFIT!!**
