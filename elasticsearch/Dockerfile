@@ -1,13 +1,13 @@
-FROM fedora:20
+FROM fedora:latest
 MAINTAINER "Ye Myat Kaung (Maverick)" <mavjs@mavjs.org>
 
-RUN yum -y install java-1.8.0-openjdk; yum clean all
+RUN yum -y install java-1.8.0-openjdk-headless; yum clean all
 RUN \
   cd /tmp && \
-  curl -O https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.3.0.tar.gz && \
-  tar xvzf elasticsearch-1.3.0.tar.gz && \
-  rm -f elasticsearch-1.3.0.tar.gz && \
-  mv /tmp/elasticsearch-1.3.0 /elasticsearch
+  curl -O https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.5.2.tar.gz && \
+  tar xvzf elasticsearch-1.5.2.tar.gz && \
+  rm -f elasticsearch-1.5.2.tar.gz && \
+  mv /tmp/elasticsearch-1.5.2 /elasticsearch
 
 VOLUME ["/data"]
 
