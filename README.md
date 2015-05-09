@@ -6,6 +6,8 @@ Install [Docker](https://www.docker.io/).
 
 ```sudo docker pull mavjs/chrome``` or any other app
 
+For GUI apps, run as below to get display and sound working:
+
 ```
     sudo docker run -it \
     --net host \
