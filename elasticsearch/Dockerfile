@@ -1,7 +1,7 @@
 FROM fedora:latest
 MAINTAINER "Ye Myat Kaung (Maverick)" <mavjs@mavjs.org>
 
-RUN yum -y install java-1.8.0-openjdk-headless; yum clean all
+RUN yum -y install java-1.8.0-openjdk-headless tar; yum clean all
 RUN \
   cd /tmp && \
   curl -O https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.5.2.tar.gz && \
