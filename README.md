@@ -24,5 +24,10 @@ For GUI apps, run as below to get display and sound working:
     --name chrome \
     mavjs/chrome
 ```
+*You may want to delete the image after using*
+
+```
+    sudo docker rm chrome
+```
 
 **PROFIT!!**
