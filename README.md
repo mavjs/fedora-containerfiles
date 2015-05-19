@@ -11,7 +11,7 @@ For GUI apps, run as below to get display and sound working:
 ```
     sudo docker run -it \
     --net host \
-    --cpuset 0 \
+    --cpuset-cups 1 \
     --memory 512mb \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY=unix$DISPLAY \
